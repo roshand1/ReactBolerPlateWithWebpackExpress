@@ -21,25 +21,25 @@ module.exports = {
           }
         ]
   },
-  resolve : {
-    fallback: { 
-      "path": false,
-      "utils":false,
-      "util":false,
-      "crypto":false,
-      "buffer":false,
-      "https":false,
-      "http":false,
-      "url":false,
-      "vm":false,
-      "querystring":false,
-      "os":false,
-      "stream":false,
-      "constants":false,
-      "assert":false,
-      "fs":false,
-      "worker_threads":false,
-      "child_process":false
-    }
-  }
+  // resolve : {
+  //   fallback: { 
+  //     "path": false,
+  //     "utils":false,
+  //     "util":false,
+  //     "crypto":false,
+  //     "buffer":false,
+  //     "https":false,
+  //     "http":false,
+  //     "url":false,
+  //     "vm":false,
+  //     "querystring":false,
+  //     "os":false,
+  //     "stream":false,
+  //     "constants":false,
+  //     "assert":false,
+  //     "fs":false,
+  //     "worker_threads":false,
+  //     "child_process":false
+  //   }
+  // }
 };
