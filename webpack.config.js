@@ -10,7 +10,6 @@ module.exports = {
   },  
   module: {
     rules: [
-          // Babel for source files and @hg/@healthgrades namespaces
           {
             test: /\.(js|jsx|es)$/,
             exclude: [/[\\\/]node_modules/],
@@ -18,7 +17,7 @@ module.exports = {
           },
           {
             test: /\.css$/i,
-            use: ["style-loader", "css-loader"],
+            use: ['style-loader', 'css-loader'],
           }
         ]
   },
