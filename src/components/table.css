@@ -9,6 +9,16 @@
    padding-left: 15px;
    padding-right: 15px;
  }
+
+ .inside-table{
+  background-color: grey;
+  width: 100%;
+ }
+ 
+ .inside-table-header{
+  background-color: cadetblue; 
+}
+
 /*  
  // Wrappers around cells and other wrappers: flex, row, wrap */
  .wrapper {
