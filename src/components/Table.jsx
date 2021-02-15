@@ -7,40 +7,47 @@ function Table(props) {
     const columnHeader = [];
     const nestedColumnHeader = [];
 
-    const displayHeader = (headersToDisplay) => headersToDisplay.map((header,i) => 
+    const displayHeader = (headersToDisplay, isNestedTable) => headersToDisplay.map((header,i) => 
     {
+        if(isNestedTable){
+            nestedColumnHeader.push(Object.keys(header)[0]);
+        }else{ 
         columnHeader.push(Object.keys(header)[0]);
+        }
         console.log(columnHeader);
         return <div className="text">{header[Object.keys(header)[0]]}</div>
     });
 
-    const displayData = (dataToDisplay) => dataToDisplay.map((d,i) => {
+    const createDataRow = (columnHeader, row) => columnHeader.map(h => {
+        return <div className="text">{row[h]}</div>
+    })
+
+    const displayData = (dataToDisplay, isNestedTable) => dataToDisplay.map((d,i) => {
         return (<div className="wrapper text-2 table-row wrapper">
-            {columnHeader.map(h => {
-                    return <div className="text">{d[h]}</div>
-                })}
-                {d.hasNestedTable && renderTable(d.nestedData.headers, d.nestedData.data)}
+            {isNestedTable ? createDataRow(nestedColumnHeader,d): createDataRow(columnHeader,d)}
+                {d.hasNestedTable && renderTable(d.nestedData.headers, d.nestedData.data,true)}
             </div>)
         }
     );
+
     
-    const renderTable = (headersToDisplay, dataToDisplay) => (
+    const renderTable = (headersToDisplay, dataToDisplay,isNestedTable) => (
         <div className="container-fluid">
                 <div className="table-row wrapper header">
                     <div className="wrapper text-4">
                     <div className="wrapper text-2">
-                        {displayHeader(headersToDisplay)}
+                        {displayHeader(headersToDisplay,isNestedTable)}
                     </div>
                     </div>
                     </div>
                     <div className="wrapper text-4">
-                        {displayData(dataToDisplay)}
+                        {displayData(dataToDisplay,isNestedTable)}
                     </div>
                 </div>
     )
 
     return (
-        <div>{renderTable(headers, data)}</div>
+        <div>{renderTable(headers, data,false)}</div>
     );
   }
   export default Table;

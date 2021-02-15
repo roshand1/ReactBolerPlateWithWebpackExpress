@@ -16,20 +16,17 @@ var props = {
     hasNestedTable:true,
     nestedData:{
       headers:[
-        {firstName:'FirstName'}, 
-        {lastName:'LastName'},
-        {email:'Email'},
-        {gender: 'Gender'}],
+        {hobbies:'Hobbies'}, 
+        {proffession:'Profession'},
+        {relationship:'Relationship'}],
       data:[{
-        firstName:'Sapana',
-        lastName:'Shrestha',
-        email:'ps@hgweb.com',
-        gender:'Female',
+        hobbies:'Music',
+        proffession:'Test Engineer',
+        relationship:'Married'
       },{
-        firstName:'Saurav',
-        lastName:'Vaidya',
-        email:'ss@hgweb.com',
-        gender:'Male',
+        hobbies:'Fly Aeroplane',
+        proffession:'Software engineer',
+        relationship:'Married'
       }]
     }
   },{
