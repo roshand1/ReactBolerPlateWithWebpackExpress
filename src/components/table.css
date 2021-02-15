@@ -11,12 +11,13 @@
  }
 
  .inside-table{
-  background-color: grey;
+  background-color: #80808030;
   width: 100%;
  }
  
  .inside-table-header{
   background-color: cadetblue; 
+  font-weight: bold;
 }
 
 /*  

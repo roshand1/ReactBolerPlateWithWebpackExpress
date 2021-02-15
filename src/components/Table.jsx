@@ -28,8 +28,8 @@ function Table() {
             </div>
           
             <div className="container-fluid inside-table">
-        <div className="table-row wrapper header">
-          <div className="wrapper text-4 inside-table-header">
+        <div className="table-row wrapper inside-table-header">
+          <div className="wrapper text-4">
             <div className="wrapper text-2">
               <div className="text">First Name</div>
               <div className="text">Last Name</div>
