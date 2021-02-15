@@ -13,6 +13,25 @@ var props = {
     lastName:'Shrestha',
     email:'as@hgweb.com',
     gender:'Male',
+    hasNestedTable:true,
+    nestedData:{
+      headers:[
+        {firstName:'FirstName'}, 
+        {lastName:'LastName'},
+        {email:'Email'},
+        {gender: 'Gender'}],
+      data:[{
+        firstName:'Sapana',
+        lastName:'Shrestha',
+        email:'ps@hgweb.com',
+        gender:'Female',
+      },{
+        firstName:'Saurav',
+        lastName:'Vaidya',
+        email:'ss@hgweb.com',
+        gender:'Male',
+      }]
+    }
   },{
     firstName:'Prakash',
     lastName:'Shrestha',
