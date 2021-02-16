@@ -47,7 +47,7 @@ function Table(props) {
     })
 
     const displayData = (dataToDisplay, isNestedTable) => dataToDisplay.map((d,i) => {
-        return (<div className="wrapper text-2 table-row wrapper">
+        return (<div className="wrapper text-2 table-row data-row">
             {isNestedTable ? createDataRow(nestedColumnHeader,d,i,false): createDataRow(columnHeader,d,i,d.hasNestedTable)}
                 {d.hasNestedTable && d.showNestedTable && renderTable(d.nestedData.headers, d.nestedData.data,true)}
             </div>)

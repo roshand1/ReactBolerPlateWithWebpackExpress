@@ -21,11 +21,11 @@
   outline: none;
   color: #069;
   cursor: pointer;
-  margin-left: -187px;
+  text-align: left;
  }
  
  .inside-table-header{
-  background-color: cadetblue; 
+  background-color:#5f9ea054;
   font-weight: bold;
 }
 
@@ -37,6 +37,9 @@
    flex-grow: 0;            -webkit-flex-grow: 0;
    flex-wrap: wrap;         -webkit-flex-wrap: wrap;
  }
+ .data-row:hover {
+  background-color: #ebebeb63;
+}
 /*  
  // Text based cells and wrappers: grow equally when there is extra space. */
  .text-4, .text-2, .text {
@@ -60,7 +63,7 @@
  }
  
  .table-row.header {
-   background-color: #FFEEDB;
+   background-color: cadetblue;
    font-weight: bold;
    padding-top: 8px;
    padding-bottom: 8px;
