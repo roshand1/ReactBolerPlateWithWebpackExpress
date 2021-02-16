@@ -4,3 +4,4 @@
 2) Npm i
 3) npm run bs
 4) npm start
+5) npm run storybook

@@ -20,7 +20,6 @@ function Table(props) {
     });
 
     const toggleNestedTable = (row,index) =>{
-        debugger;
         const newList = initialData.map((item,i) => {
             if (i === index) {
               const updatedItem = {
@@ -33,7 +32,6 @@ function Table(props) {
        
             return item;
           });
-       debugger;
           setColumnData(newList);
     }
 
