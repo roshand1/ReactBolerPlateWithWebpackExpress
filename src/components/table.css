@@ -50,22 +50,7 @@
    text-overflow: ellipsis;
    padding-right: 20px;
    padding-left:15px;
- }
- 
- /* // Fix the minimum width of the leaf level cells */
- .text {
    width: 180px;
- }
- 
- .num {
-   width: 80px;
- }
- 
- /*
-  * General good-look styles, not mandatory.
-  */
- body {
-   font-size: 20px;
  }
  
  .table-row {
@@ -80,17 +65,3 @@
    padding-top: 8px;
    padding-bottom: 8px;
  }
- 
- /* Some borders to show the behaviour. Uncomment to see it in action */
- /*
- .text-2, .num-2 {
-   border: 1px solid green;
-   padding: 2px;
-   margin: 2px;
- }
- 
- .text-4, .num-4 {
-   border: 1px solid red;
-   margin: 2px;
- }
- */

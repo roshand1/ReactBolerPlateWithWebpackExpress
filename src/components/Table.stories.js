@@ -43,13 +43,13 @@ var props = {
         {proffession:'Profession'},
         {relationship:'Relationship'}],
       data:[{
-        hobbies:'Music',
-        proffession:'Test Engineer',
-        relationship:'Married'
+        hobbies:'Play Pingpong',
+        proffession:'Software Test/Automation Engineer',
+        relationship:'Married with Neelam'
       },{
-        hobbies:'Fly Aeroplane',
-        proffession:'Software engineer',
-        relationship:'Married'
+        hobbies:'Cook Maasu',
+        proffession:'Software engineer at Austin',
+        relationship:'Married with Neelam again'
       }]
     }
   },{
@@ -75,13 +75,13 @@ var props = {
         {proffession:'Profession'},
         {relationship:'Relationship'}],
       data:[{
-        hobbies:'Music',
-        proffession:'Test Engineer',
-        relationship:'Married'
+        hobbies:'Sing',
+        proffession:'Product owner',
+        relationship:'Married with Neelam'
       },{
-        hobbies:'Fly Aeroplane',
-        proffession:'Software engineer',
-        relationship:'Married'
+        hobbies:'Dance',
+        proffession:'Marketing manager',
+        relationship:'Married with Prakash'
       }]
     }
   }]

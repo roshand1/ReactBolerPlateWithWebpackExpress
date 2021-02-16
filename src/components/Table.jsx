@@ -9,15 +9,21 @@ function Table(props) {
     const columnHeader = [];
     const nestedColumnHeader = [];
 
-    const displayHeader = (headersToDisplay, isNestedTable) => headersToDisplay.map((header,i) => 
-    {
-        if(isNestedTable){
-            nestedColumnHeader.push(Object.keys(header)[0]);
-        }else{ 
-        columnHeader.push(Object.keys(header)[0]);
-        }
-        return <div className="text">{header[Object.keys(header)[0]]}</div>
-    });
+    const displayHeader = (headersToDisplay, isNestedTable) => {
+        var fillColumnHeader = false;
+        var fillNestedColumnHeader = false;
+        if (!columnHeader || !(columnHeader.length > 0)) fillColumnHeader = true;
+        if (!nestedColumnHeader || !(nestedColumnHeader.length > 0)) fillNestedColumnHeader = true;
+        return headersToDisplay.map((header,i) => 
+            {
+                if(isNestedTable && fillNestedColumnHeader){
+                    nestedColumnHeader.push(Object.keys(header)[0]);
+                }else{ 
+                    debugger;
+                    if (fillColumnHeader) columnHeader.push(Object.keys(header)[0]);
+                }
+                return <div className="text">{header[Object.keys(header)[0]]}</div>
+            })};
 
     const toggleNestedTable = (row,index) =>{
         const newList = initialData.map((item,i) => {
@@ -50,6 +56,7 @@ function Table(props) {
 
     
     const renderTable = (headersToDisplay, dataToDisplay,isNestedTable) => {
+        debugger;
         const classes = classNames({
             'container-fluid': true,
             'inside-table':isNestedTable
