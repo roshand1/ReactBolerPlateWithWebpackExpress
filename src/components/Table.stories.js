@@ -14,6 +14,7 @@ var props = {
     email:'as@hgweb.com',
     gender:'Male',
     hasNestedTable:true,
+    showNestedTable:false,
     nestedData:{
       headers:[
         {hobbies:'Hobbies'}, 
@@ -34,6 +35,23 @@ var props = {
     lastName:'Shrestha',
     email:'ps@hgweb.com',
     gender:'Male',
+    hasNestedTable:true,
+    showNestedTable:true,
+    nestedData:{
+      headers:[
+        {hobbies:'Hobbies'}, 
+        {proffession:'Profession'},
+        {relationship:'Relationship'}],
+      data:[{
+        hobbies:'Music',
+        proffession:'Test Engineer',
+        relationship:'Married'
+      },{
+        hobbies:'Fly Aeroplane',
+        proffession:'Software engineer',
+        relationship:'Married'
+      }]
+    }
   },{
     firstName:'Utsav ',
     lastName:'Siwakoti',
@@ -49,6 +67,23 @@ var props = {
     lastName:'Shrestha',
     email:'ns@hgweb.com',
     gender:'Female',
+    hasNestedTable:true,
+    showNestedTable:true,
+    nestedData:{
+      headers:[
+        {hobbies:'Hobbies'}, 
+        {proffession:'Profession'},
+        {relationship:'Relationship'}],
+      data:[{
+        hobbies:'Music',
+        proffession:'Test Engineer',
+        relationship:'Married'
+      },{
+        hobbies:'Fly Aeroplane',
+        proffession:'Software engineer',
+        relationship:'Married'
+      }]
+    }
   }]
 }
 

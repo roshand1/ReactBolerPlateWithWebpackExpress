@@ -5,6 +5,7 @@ import './Table-Dynamic'
 
 function Table(props) {
     const {headers, data} = props;
+    const [initialData, setColumnData] = useState(data);
     const columnHeader = [];
     const nestedColumnHeader = [];
 
@@ -18,15 +19,33 @@ function Table(props) {
         return <div className="text">{header[Object.keys(header)[0]]}</div>
     });
 
-    const createDataRow = (columnHeader, row, hasNestedTable) => columnHeader.map(h => {
-        if(hasNestedTable) return <button className="toggle-down-button text">{row[h]}</button>
+    const toggleNestedTable = (row,index) =>{
+        debugger;
+        const newList = initialData.map((item,i) => {
+            if (i === index) {
+              const updatedItem = {
+                ...item,
+                showNestedTable : !item.showNestedTable
+              };
+       
+              return updatedItem;
+            }
+       
+            return item;
+          });
+       debugger;
+          setColumnData(newList);
+    }
+
+    const createDataRow = (columnHeader, row,index, hasNestedTable) => columnHeader.map(h => {
+        if(hasNestedTable) return <button onClick={() => toggleNestedTable(row, index)} className="toggle-down-button text">{row[h]}</button>
         return <div className="text">{row[h]}</div>
     })
 
     const displayData = (dataToDisplay, isNestedTable) => dataToDisplay.map((d,i) => {
         return (<div className="wrapper text-2 table-row wrapper">
-            {isNestedTable ? createDataRow(nestedColumnHeader,d,false): createDataRow(columnHeader,d,d.hasNestedTable)}
-                {d.hasNestedTable && renderTable(d.nestedData.headers, d.nestedData.data,true)}
+            {isNestedTable ? createDataRow(nestedColumnHeader,d,i,false): createDataRow(columnHeader,d,i,d.hasNestedTable)}
+                {d.hasNestedTable && d.showNestedTable && renderTable(d.nestedData.headers, d.nestedData.data,true)}
             </div>)
         }
     );
@@ -60,7 +79,7 @@ function Table(props) {
     )}
 
     return (
-        <div>{renderTable(headers, data,false)}</div>
+        <div>{renderTable(headers, initialData, false)}</div>
     );
   }
   export default Table;
