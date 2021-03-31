@@ -15,10 +15,15 @@ RUN npm install
 
 # Copy your project file
 COPY . .
+
+# This will run webpack to create a bundle like it does in our local machine
 RUN npm run build
 
 FROM nginx
 
+# we ignore all other files except index.html which is main index page where
+# react app is imported
+# and javascript bundle.
 COPY --from=builder /app/public /usr/share/nginx/html
 COPY --from=builder /app/app /usr/share/nginx/html
 

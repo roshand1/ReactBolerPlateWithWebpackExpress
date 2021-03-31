@@ -1,5 +1,6 @@
 import Gallery from './components/Gallery/Gallery.jsx'
 import Table from './components/Table/Table.jsx';
+import tableModel from './testmodel.js'
 
 function App() {
     return (
@@ -8,7 +9,7 @@ function App() {
               <Gallery></Gallery>
           </div>
           <div>
-              <Table/>
+              <Table tableModel/>
           </div>
       </div>
     );

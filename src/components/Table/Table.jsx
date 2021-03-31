@@ -4,7 +4,7 @@ import './table.css';
 import './Table-Dynamic.jsx'
 
 function Table(props) {
-    const {headers, data} = props;
+    const {headers = [], data = []} = props;
     const [initialData, setColumnData] = useState(data);
     const columnHeader = [];
     const nestedColumnHeader = [];
