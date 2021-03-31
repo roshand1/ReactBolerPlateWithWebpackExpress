@@ -1,5 +1,5 @@
-import Gallery from './Gallery.jsx'
-import Table from './components/Table.jsx';
+import Gallery from './components/Gallery/Gallery.jsx'
+import Table from './components/Table/Table.jsx';
 
 function App() {
     return (

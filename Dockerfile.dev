@@ -1,8 +1,8 @@
 # Specify a base image
 # https://hub.docker.com/_/node
-FROM node:14.15.1-alpine as builder
+FROM node:14.15.1-alpine
 
-WORKDIR /app
+WORKDIR /usr/app
 
 # Copy package.json file
 # npm install only worries about changes in package.json file
@@ -14,12 +14,7 @@ COPY ./package.json ./
 RUN npm install
 
 # Copy your project file
-COPY . .
-RUN npm run build
+COPY ./ ./
 
-FROM nginx
-
-COPY --from=builder /app/public /usr/share/nginx/html
-COPY --from=builder /app/app /usr/share/nginx/html
-
-# We don't have to write start nginx as default command for ngnx is to start.
+#Default command
+CMD ["npm", "start"]
