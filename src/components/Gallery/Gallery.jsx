@@ -24,7 +24,7 @@ function Gallery () {
 
     return (
       <div className="App">
-        <h3>Slide Effect</h3>
+        <h3>Images</h3>
         <div className="image-container">
                 <img className="displayImage" src={displayImage} alt="sample" />
         </div>
