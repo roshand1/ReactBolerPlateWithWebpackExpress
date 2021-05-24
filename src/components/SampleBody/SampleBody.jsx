@@ -24,22 +24,20 @@ function Header() {
 
     return (
         <main>
+        <div className="background-svg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0f169b" fill-opacity="1" d="M0,288L60,293.3C120,299,240,309,360,288C480,267,600,213,720,181.3C840,149,960,139,1080,138.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+        </div>
         <section class="presentation">
-            {/* <div class="introduction">
+            <div class="introduction">
                 <div class="intro-text">
-                    <h1>Laptop for the future</h1>
+                    <h1>Website Design</h1>
                     <p>
-                        The new 14 inch bezeless display oferring a 4k
-                        display with touch screen.
+                        We build responsive website that will turn your website viewer to your customer.
                     </p>
                 </div>
-                <div class="cta">
-                    <button class="cta-select">14 Inch</button>
-                    <button class="cta-add">Add To Cart</button>
-                </div>
-            </div> */}
+            </div>
             <div class="cover">
-                <img src={displayImage} alt="matebook" />
+                <img src="./img/matebook.png" alt="matebook" />
             </div>
         </section>
 

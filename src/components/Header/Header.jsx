@@ -4,7 +4,10 @@ function Header() {
     return (
         <div className="header">
             <div className="logo-container">
-				<h4 className="logo">Some logo</h4>
+				<h4 className="logo">
+				<img src="./img/BlueSvg.svg" className="logo-image" alt="" />
+					<span className="company-name">rdmarketing</span>
+				</h4>
 			</div>
 			<nav>
 				<ul className="nav-links">

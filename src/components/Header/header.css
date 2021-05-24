@@ -10,14 +10,21 @@
 .cart {
 	display: flex;
 }
-
-
 .logo-container {
 	flex: 1;
 }
 .logo {
 	font-weight: 400;
 	margin: 5px;
+	margin-top: 30px;
+	display: flex;
+}
+.company-name{
+	color: #0f169b;
+	font-weight: bold;
+}
+.logo-image{
+	height: 60px;
 }
 nav {
 	flex: 2;

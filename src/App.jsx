@@ -13,9 +13,6 @@ function App() {
           <div>
               <SampleBody></SampleBody>
           </div>
-          <div>
-              <Table tableModel/>
-          </div>
       </div>
     );
   }
