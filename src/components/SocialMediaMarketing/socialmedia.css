@@ -1,0 +1,7 @@
+.printing-service{
+    display:flex
+}
+.sm-img {
+    height: 60% !important;
+    filter: none !important;
+}

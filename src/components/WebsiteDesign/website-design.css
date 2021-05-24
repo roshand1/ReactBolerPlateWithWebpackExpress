@@ -1,7 +1,6 @@
 
 .presentation {
 	display: flex;
-	width: 90%;
 	margin: auto;
 	min-height: 60vh;
 }
@@ -62,6 +61,7 @@
 	justify-content: space-around;
 	position: absolute;
 	right: 20%;
+	margin-top: 57vh;
 } 
 
  @keyframes drop {

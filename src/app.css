@@ -7,3 +7,8 @@
 body {
 	font-family: 'Poppins', sans-serif;
 }
+
+.individual-section {
+	margin-bottom: 10vh;
+    padding: 0 10% 0 10%;
+}
