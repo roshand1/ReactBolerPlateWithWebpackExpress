@@ -2,7 +2,7 @@ import Table from './components/Table/Table.jsx';
 import './app.css';
 import tableModel from './testmodel.js'
 import Header from './components/Header/Header.jsx';
-import SampleBody from './components/SampleBody/SampleBody.jsx';
+import WebsiteDesign from './components/WebsiteDesign/WebsiteDesign.jsx';
 
 function App() {
     return (
@@ -11,7 +11,7 @@ function App() {
               <Header></Header>
           </div>
           <div>
-              <SampleBody></SampleBody>
+              <WebsiteDesign></WebsiteDesign>
           </div>
       </div>
     );

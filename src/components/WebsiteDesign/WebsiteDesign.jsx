@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './samplebody.css';
+import './website-design.css';
 
 function Header() {
     const gallery = "SauravWedding";
@@ -32,7 +32,8 @@ function Header() {
                 <div class="intro-text">
                     <h1>Website Design</h1>
                     <p>
-                        We build responsive website that will turn your website viewer to your customer.
+                        We help small business build and host responsive webiste that works in almost all devices and thrive their business.
+                        Our expert team takes into consideration about the SEO and make sure organic traffic grows.
                     </p>
                 </div>
             </div>
