@@ -1,6 +1,11 @@
-.printing-service{
+.printing-service {
     display:flex
 }
 .tshirt-image{
     filter:none !important;
+}
+@media screen and (max-width: 1024px) {
+	.printing-service {
+        flex-direction: column-reverse;
+	}
 }

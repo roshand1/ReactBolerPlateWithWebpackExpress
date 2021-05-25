@@ -33,18 +33,20 @@ function Header() {
                     </p>
                 </div>
             </div>
-            <div class="cover">
-                <img src="./img/matebook.png" alt="matebook" />
+            <div>
+                <div class="cover">
+                    <img src="./img/matebook.png" alt="matebook" />
+                </div>
                 <div class="laptop-select">
-                <button onClick={() => back()} type="button">
-                    <img src="./img/arrow-left.svg" alt="" />
-                </button>
-                    <img src="./img/dot.svg" alt="" />
-                    <img src="./img/dot-full.svg" alt="" />
-                    <img src="./img/dot-full.svg" alt="" />
-                <button onClick={() => next()} type="button">
-                    <img src="./img/arrow-right.svg" alt="" />
-                </button>
+                    <button onClick={() => back()} type="button">
+                        <img src="./img/arrow-left.svg" alt="" />
+                    </button>
+                        <img src="./img/dot.svg" alt="" />
+                        <img src="./img/dot-full.svg" alt="" />
+                        <img src="./img/dot-full.svg" alt="" />
+                    <button onClick={() => next()} type="button">
+                        <img src="./img/arrow-right.svg" alt="" />
+                    </button>
                 </div>
             </div>
 

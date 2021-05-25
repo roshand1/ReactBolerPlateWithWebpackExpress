@@ -1,7 +1,12 @@
-.printing-service{
+.socialmedia-service {
     display:flex
 }
 .sm-img {
     height: 60% !important;
     filter: none !important;
+}
+@media screen and (max-width: 1024px) {
+	.socialmedia-service {
+		flex-direction: column;
+	}
 }

@@ -2,7 +2,7 @@ import './socialmedia.css';
 
 function SocialMedia() {
     return (
-        <section className="printing-service">
+        <section className="socialmedia-service">
             <div class="introduction">
                 <div class="intro-text">
                     <h1>Social Media Marketing</h1>
@@ -11,8 +11,11 @@ function SocialMedia() {
                     </p>
                 </div>
             </div>
-        <div class="cover">
-            <img className="sm-img" src="./img/smmarketing.jpg" alt="matebook" />
+            
+        <div>
+            <div class="cover">
+                <img className="sm-img" src="./img/smmarketing.jpg" alt="matebook" />
+            </div>
         </div>
         </section>
     );

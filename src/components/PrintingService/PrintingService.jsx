@@ -3,8 +3,10 @@ import './printing.css';
 function PrintingService() {
     return (
         <section className="printing-service">
-        <div class="cover">
-            <img className="tshirt-image" src="./img/TShirt.jpg" alt="matebook" />
+        <div>
+            <div class="cover">
+                <img className="tshirt-image" src="./img/TShirt.jpg" alt="matebook" />
+            </div>
         </div>
             <div class="introduction">
                 <div class="intro-text">
