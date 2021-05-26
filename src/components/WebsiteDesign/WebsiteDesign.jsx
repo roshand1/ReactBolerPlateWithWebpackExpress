@@ -28,8 +28,12 @@ function Header() {
                 <div class="intro-text">
                     <h1>Website Design</h1>
                     <p>
-                        We help small business build and host responsive webiste that works in almost all devices and thrive their business.
-                        Our expert team takes into consideration about the SEO and make sure organic traffic grows.
+                        We help small business build and host responsive webistes that is compatible in all devices.
+                        Our expert team takes into consideration about the search engines like google, bing and yahoo and study their algorithms to 
+                        optimize website which helps in organic traffic and thrive your business.
+                    </p>
+                    <p>
+                        We also help you create logo for your company which helps in branding your company. A well design logo is necessary to build trust with your customer.
                     </p>
                 </div>
             </div>

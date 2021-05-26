@@ -12,8 +12,10 @@ function PrintingService() {
                 <div class="intro-text">
                     <h1>Graphic + Printing Service</h1>
                     <p>
-                        We help small business build and host responsive webiste that works in almost all devices and thrive their business.
-                        Our expert team takes into consideration about the SEO and make sure organic traffic grows.
+                        We will take care of all the printing business to start branding your company such as printing clothes, caps with company logo. 
+                    </p>
+                    <p>
+                        We also take care of printing business cards.
                     </p>
                 </div>
             </div>
