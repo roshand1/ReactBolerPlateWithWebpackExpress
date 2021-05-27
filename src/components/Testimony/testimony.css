@@ -1,21 +1,31 @@
 
 .testimony-section {
-    display: flex;
-    justify-content: center;
     height: 30vh;
     background-color: #a4a4a42b;
-    align-items: center;
     margin-top: 5vh;
+    font-style: italic;
+    font-family: auto;
 }
+
+.testimony {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8vh;
+}
+
 .quote-icon {
     color: #0f169b;
-    height: 3vh;
+    margin-bottom: 3vh;
 }
 .quote-icon-left {
+    margin-bottom: 4vh;
     transform: scaleX(-1);
 }
 .testimony-text {
-    font-style: italic;
-    font-family: auto;
-    padding: 0 10px 0 10px;
+    padding: 0 20px 0 20px;
+}
+.testimony-name {
+    display: flex;
+    justify-content: center;
 }

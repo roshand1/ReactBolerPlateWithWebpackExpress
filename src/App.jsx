@@ -4,7 +4,7 @@ import WebsiteDesign from './components/WebsiteDesign/WebsiteDesign.jsx';
 import PrintingService from './components/PrintingService/PrintingService.jsx';
 import SocialMedia from './components/SocialMediaMarketing/SocialMedia.jsx';
 import SectionDivider from './components/SectionDivider/SectionDivider.jsx';
-import Testimony from './components/Testimony/Testimony.jsx';
+import Testimonies from './components/Testimonies/Testimonies.jsx';
 
 function App() {
     return (
@@ -24,7 +24,7 @@ function App() {
           </div>
           <SectionDivider title='Testimonies'></SectionDivider>
           <div className="individual-section">
-              <Testimony testimony='I loved the service of this company'></Testimony>
+              <Testimonies/>
           </div>
       </div>
     );

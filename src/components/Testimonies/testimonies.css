@@ -1,0 +1,22 @@
+.testimonies-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.testimony-slider {
+    display: flex;
+    align-self: center;
+    width: 25%;
+    margin-top: 5vh;
+}
+
+.testimony-section span {
+    float: left;
+    margin-top: 3vh;
+}
+
+@media screen and (max-width: 1024px) {
+    .testimony-slider {
+        margin-right: 25%;
+    }
+}

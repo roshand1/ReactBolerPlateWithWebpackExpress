@@ -1,0 +1,19 @@
+.slider-select {
+	width: 15%;
+	display: flex;
+	flex: 1;
+	justify-content: space-around;
+} 
+.slider-select button{
+	border:none;
+   background-color:transparent;
+   outline:none;
+}
+
+@media screen and (max-width: 1024px) {
+	.slider-select {
+		right: 50%;
+		width: 50%;
+		transform: translate(50%, 5%);
+	}
+}
