@@ -66,6 +66,11 @@
 	position: absolute;
 	right: 20%;
 } 
+.laptop-select button{
+	border:none;
+   background-color:transparent;
+   outline:none;
+}
 
  @keyframes drop {
 	0% {
