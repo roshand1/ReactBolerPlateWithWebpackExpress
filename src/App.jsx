@@ -3,6 +3,8 @@ import Header from './components/Header/Header.jsx';
 import WebsiteDesign from './components/WebsiteDesign/WebsiteDesign.jsx';
 import PrintingService from './components/PrintingService/PrintingService.jsx';
 import SocialMedia from './components/SocialMediaMarketing/SocialMedia.jsx';
+import SectionDivider from './components/SectionDivider/SectionDivider.jsx';
+import Testimony from './components/Testimony/Testimony.jsx';
 
 function App() {
     return (
@@ -19,6 +21,10 @@ function App() {
           </div>
           <div className="individual-section">
               <SocialMedia></SocialMedia>
+          </div>
+          <SectionDivider title='Testimonies'></SectionDivider>
+          <div className="individual-section">
+              <Testimony testimony='I loved the service of this company'></Testimony>
           </div>
       </div>
     );

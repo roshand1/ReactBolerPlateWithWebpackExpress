@@ -1,0 +1,21 @@
+
+.testimony-section {
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    background-color: #a4a4a42b;
+    align-items: center;
+    margin-top: 5vh;
+}
+.quote-icon {
+    color: #0f169b;
+    height: 3vh;
+}
+.quote-icon-left {
+    transform: scaleX(-1);
+}
+.testimony-text {
+    font-style: italic;
+    font-family: auto;
+    padding: 0 10px 0 10px;
+}

@@ -9,6 +9,9 @@ function SocialMedia() {
                     <p>
                         We will take care of marketing in appropriate platform such as Facebook, Twitter, Youtube so that the customer can focus in their product.
                     </p>
+                    <p>
+                        We will help customer to build email and text notification system with their especials and promotions.
+                    </p>
                 </div>
             </div>
             
