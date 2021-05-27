@@ -1,27 +1,6 @@
-import React, { useState } from 'react';
 import './website-design.css';
 
-function Header() {
-    const gallery = "SauravWedding";
-
-    const [imageNumber, setImageNumber] = useState(5487);
-    const [displayImage, setDisplayImage] = useState(`https://s3-us-west-2.amazonaws.com/roshan.test.bucket/IphonePhotos/${gallery}/IMG_8032.JPG`);
-  
-    const back = () => {
-      var newNumber = imageNumber -1;
-      setImageNumber(newNumber);
-      var newImage = `https://s3-us-west-2.amazonaws.com/roshan.test.bucket/IphonePhotos/${gallery}/IMG_${imageNumber}.JPG`;
-      setDisplayImage(newImage);
-    }
-  
-    const next = () => {
-      var newNumber = imageNumber  + 1;
-      setImageNumber(newNumber);
-      var newImage = `https://s3-us-west-2.amazonaws.com/roshan.test.bucket/IphonePhotos/${gallery}/IMG_${imageNumber}.JPG`;
-      setDisplayImage(newImage);
-    }
-
-
+function WebsiteDesign() {
     return (
         <section class="presentation">
             <div class="introduction">
@@ -41,17 +20,6 @@ function Header() {
                 <div class="cover">
                     <img src="./img/matebook.png" alt="matebook" />
                 </div>
-                <div class="laptop-select">
-                    <button onClick={() => back()} type="button">
-                        <img src="./img/arrow-left.svg" alt="" />
-                    </button>
-                        <img src="./img/dot.svg" alt="" />
-                        <img src="./img/dot-full.svg" alt="" />
-                        <img src="./img/dot-full.svg" alt="" />
-                    <button onClick={() => next()} type="button">
-                        <img src="./img/arrow-right.svg" alt="" />
-                    </button>
-                </div>
             </div>
 
         <img class="big-circle" src="./img/big-eclipse.svg" alt="" />
@@ -61,4 +29,4 @@ function Header() {
         </section>
     );
   }
-  export default Header;
+  export default WebsiteDesign;

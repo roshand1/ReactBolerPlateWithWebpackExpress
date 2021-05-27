@@ -9,7 +9,7 @@ function Testimony(props) {
                     <i class="bi bi-chat-quote-fill"></i>
                 </div>
                 <div className="testimony-text">
-                    <h1>{testimony}</h1>
+                    <h3>{testimony}</h3>
                 </div>
                 <div className="quote-icon">
                     <i class="bi bi-chat-quote-fill"></i>

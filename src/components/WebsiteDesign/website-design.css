@@ -58,20 +58,6 @@
 	z-index: -1;
 }
 
- .laptop-select {
-	width: 15%;
-	display: flex;
-	flex: 1;
-	justify-content: space-around;
-	position: absolute;
-	right: 20%;
-} 
-.laptop-select button{
-	border:none;
-   background-color:transparent;
-   outline:none;
-}
-
  @keyframes drop {
 	0% {
 		opacity: 0;
@@ -96,11 +82,6 @@
 	}
 	.intro-text p {
 		font-size: 18px;
-	}
-	.laptop-select {
-		right: 50%;
-		width: 50%;
-		transform: translate(50%, 5%);
 	}
 	.cover {
 		height: 40vh;
