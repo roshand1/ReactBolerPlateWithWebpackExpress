@@ -5,6 +5,7 @@ import PrintingService from './components/PrintingService/PrintingService.jsx';
 import SocialMedia from './components/SocialMediaMarketing/SocialMedia.jsx';
 import SectionDivider from './components/SectionDivider/SectionDivider.jsx';
 import Testimonies from './components/Testimonies/Testimonies.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
           <div className="individual-section">
               <Testimonies/>
           </div>
+          <Footer></Footer>
       </div>
     );
   }
