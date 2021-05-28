@@ -13,7 +13,7 @@ function Footer() {
             
             <div>
                 <span>
-                 © Copyright RDMarketing. All Rights Reserved.
+                 &#169; Copyright RDMarketing. All Rights Reserved.
                   Use of any information and content in this website is preserved by RDMarketing Company's right.
                 </span>
             </div>
