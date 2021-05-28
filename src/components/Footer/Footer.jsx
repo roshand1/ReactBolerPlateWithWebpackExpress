@@ -5,7 +5,7 @@ function Footer() {
         <div className="footer">
             <div>
                 <span>
-                    rd marketing
+                    RDMarketing
                     5541 Argonne CT Denver CO, 80249
                     (214) 300 9560
                 </span>
@@ -13,7 +13,8 @@ function Footer() {
             
             <div>
                 <span>
-                  Copyright . All rights reserved
+                 © Copyright RDMarketing. All Rights Reserved.
+                  Use of any information and content in this website is preserved by RDMarketing Company's right.
                 </span>
             </div>
         </div>

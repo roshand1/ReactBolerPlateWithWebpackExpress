@@ -7,7 +7,7 @@ function WebsiteDesign() {
                 <div class="intro-text">
                     <h1>Website Design</h1>
                     <p>
-                        We help small business build and host responsive webistes that is compatible in all devices.
+                        We help small business build and host responsive webistes that are compatible in all devices.
                         Our expert team takes into consideration about the search engines like google, bing and yahoo and study their algorithms to 
                         optimize website which helps in organic traffic and thrive your business.
                     </p>
