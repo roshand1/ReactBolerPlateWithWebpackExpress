@@ -11,14 +11,14 @@ function Header() {
 			</div>
 			<nav>
 				<ul className="nav-links">
-					<li><a className="nav-link" href="#">What We Do</a></li>
-					<li><a className="nav-link" href="#">Gallery</a></li>
+					<li><a className="nav-link" href="#website-design">What We Do</a></li>
+					<li><a className="nav-link" href="#testimonials">Testimonials</a></li>
 					<li><a className="nav-link" href="#">Specials</a></li>
 				</ul>
 			</nav>
 			<div>
-				CALL US NOW FOR SPECIAL DEAL 
-				214 300 9560
+				Free Consultation
+				(214) 300 9560
 			</div>
         </div>
     );
